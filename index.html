@@ -6,13 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script> -->
         <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-route/angular-route.min.js"></script>
          <script src="_scripts/myapp.js"></script>
+         <script src="_scripts/ctrls.js"></script>
+
 
          <link href="_css/style.css" rel="stylesheet" type="text/css"/>
 
     </head>
     <body>
-        <div class="content">
+
+        <div class="content" ng-view>
+
+
+        </div>
+        <!-- <div class="content">
                 <h1>Best anime movies</h1>
             <div class="search">
                     <h5 > Search  </h5>
@@ -29,7 +37,7 @@
         <div ng-controller="MyController">
             <div class="box" ng-repeat="item in movies | filter:search_input | orderBy:order_by">
                     <h1>{{ item.name }}</h1>
-                  <!--  <p>There are {{ item[0].name }} and have {{ item[0].rating }} seasons</p>-->
+                  <p>There are {{ item[0].name }} and have {{ item[0].rating }} seasons</p>
                     
                     <img src= "{{ item.image }}" width="100">
 
@@ -38,7 +46,7 @@
             </div>
  
         </div>
-    </div>
+    </div> -->
     </body>
     
 </html>

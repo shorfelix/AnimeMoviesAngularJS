@@ -1,0 +1,24 @@
+
+<h1>Best anime movies</h1>
+  <div class="search">
+        <h5 > Search  </h5>
+        <input class="search" type="text" ng-model="search_input">
+        <label>Order By:</label>
+        <select class="order" ng-model="order_by">
+                <option value="name">Name</option>
+             <option value="views">views</option> 
+            <option value="rating">Rating</option>
+        </select>
+  </div>
+
+    <div class="box" ng-repeat="item in movies | filter:search_input | orderBy:order_by">
+            <h1>{{ item.name }}</h1>
+          <!--  <p>There are {{ item[0].name }} and have {{ item[0].rating }} seasons</p>-->
+            
+            <img src= "{{ item.image }}" width="100">
+
+            <h4>Ratings  :<rating>{{item.rating}}</rating></h4>
+            <h4>views : {{item.views}}</h4>
+    </div>
+</div>
+

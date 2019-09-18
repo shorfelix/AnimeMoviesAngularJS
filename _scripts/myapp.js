@@ -6,15 +6,16 @@ myApp.config(RouteConnect)
 function RouteConnect($routeProvider){
 
 $routeProvider.when("/list",{
-    templateUrl:"./../list.html",
+    templateUrl:"_html/list.html",
     controller:"ListCtrl"}).when("/detail/:movieId",{
-        templateUrl:"./../detail.html",
+        templateUrl:"_html/detail.html",
         controller:"DetailCtrl"
     })
     .otherwise({
+       
         redirectTo:"/list"
     })
 
-
+    console.log($routeProvider);
 }
    

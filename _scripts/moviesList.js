@@ -1,4 +1,4 @@
-﻿[
+﻿var movies=[
         {
              name:"Ghost in the shell",
              rating:9,

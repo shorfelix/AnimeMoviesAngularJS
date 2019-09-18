@@ -7,7 +7,7 @@ function RouteConnect($routeProvider){
 
 $routeProvider.when("/list",{
     templateUrl:"./../list.html",
-    controller:"ListCtrl"}).when("/detail",{
+    controller:"ListCtrl"}).when("/detail/:movieId",{
         templateUrl:"./../detail.html",
         controller:"DetailCtrl"
     }).otherwise({

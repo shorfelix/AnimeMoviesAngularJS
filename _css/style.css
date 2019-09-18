@@ -12,7 +12,22 @@ background-color:rgb(92, 90, 90);
 div{
 color: #ccc
 }
-
+a:link {
+    text-decoration: none;
+  } 
+.movieInfo{
+    width:100%;
+    background-color: #383738;
+    border-bottom: 1px solid appworkspace;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition:0.8s;
+        
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+}
 .content{
    max-width: 500px;
    min-height: 80px;

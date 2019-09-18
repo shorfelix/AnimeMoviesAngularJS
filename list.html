@@ -12,13 +12,16 @@
   </div>
 
     <div class="box" ng-repeat="item in movies | filter:search_input | orderBy:order_by">
+      <a href="#/detail/{{movies.indexOf(item)}}">
             <h1>{{ item.name }}</h1>
+         
           <!--  <p>There are {{ item[0].name }} and have {{ item[0].rating }} seasons</p>-->
             
             <img src= "{{ item.image }}" width="100">
 
             <h4>Ratings  :<rating>{{item.rating}}</rating></h4>
             <h4>views : {{item.views}}</h4>
+          </a>
     </div>
 </div>
 

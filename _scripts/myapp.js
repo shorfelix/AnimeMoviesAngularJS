@@ -10,7 +10,8 @@ $routeProvider.when("/list",{
     controller:"ListCtrl"}).when("/detail/:movieId",{
         templateUrl:"./../detail.html",
         controller:"DetailCtrl"
-    }).otherwise({
+    })
+    .otherwise({
         redirectTo:"/list"
     })
 

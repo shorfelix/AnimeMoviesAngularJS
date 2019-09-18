@@ -12,7 +12,7 @@
   </div>
 
     <div class="box" ng-repeat="item in movies | filter:search_input | orderBy:order_by">
-      <a href="#/detail/{{movies.indexOf(item)}}">
+      <a href="#/detail/{{movies.indexOf(item)}}" target="_blank">
             <h1>{{ item.name }}</h1>
          
           <!--  <p>There are {{ item[0].name }} and have {{ item[0].rating }} seasons</p>-->
